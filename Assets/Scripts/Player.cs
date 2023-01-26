@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    //Although this script is named Player, DO NOT mistaken it or the Third-person Controller Script!
+    //Although this script is named Player, DO NOT mistaken it for the Third-person Controller Script!
     
     // Update is called once per frame
     void Update()

@@ -627,4 +627,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5416b5fbc74f84a588a01355045a4d22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxOxy: 5
+  maxOxy: 180

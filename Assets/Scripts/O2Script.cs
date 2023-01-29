@@ -21,7 +21,7 @@ public class O2Script : MonoBehaviour
     {
         CurrentOxy -= Time.deltaTime;
 
-        if (CurrentOxy == 0.0f)
+        if (CurrentOxy <= 0.0f)
         {
             UnityEngine.Debug.Log("Youre Dead");
         }

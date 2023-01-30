@@ -47,6 +47,11 @@ public class ThirdPersonMovement : MonoBehaviour
 
             animator.SetBool("IsWalking?", true);
 
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                axeSwing();
+            }
+
         }
         else 
         {
@@ -55,4 +60,16 @@ public class ThirdPersonMovement : MonoBehaviour
         
         }
     }
+
+
+
+
+    private void axeSwing()
+    {
+       animator.SetTrigger("IsSwinging?");
+    }
+
+   
+
+
 }

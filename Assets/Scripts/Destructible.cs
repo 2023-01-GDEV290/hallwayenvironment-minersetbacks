@@ -14,7 +14,7 @@ public class Destructible : MonoBehaviour
     }
 
     //Code above is duplicated to provide ideal code outline for when an animation for the pickaxe swing is executed.
-    //DO NOT uncomment code, until further notice!
+    //DO NOT uncomment code, unless we are ready to test it!
     //if(hit)
     //{
         //Instantiate(destroyedVersion, transform.position, transform.rotation);

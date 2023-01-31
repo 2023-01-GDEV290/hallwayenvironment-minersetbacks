@@ -22,8 +22,7 @@ public class ThirdPersonMovement : MonoBehaviour
     {
 
         animator = GetComponent<Animator>();
-
-
+        
     }
     
     void Update()
@@ -32,6 +31,7 @@ public class ThirdPersonMovement : MonoBehaviour
         float vertical = Input.GetAxisRaw("Vertical");
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
 
+      
         if (direction.magnitude >= 0.1f)
         {
 
@@ -46,27 +46,30 @@ public class ThirdPersonMovement : MonoBehaviour
             controller.Move(direction * speed * Time.deltaTime);
 
             animator.SetBool("IsWalking?", true);
-
-            if (Input.GetKeyDown(KeyCode.Mouse0))
-            {
-                axeSwing();
-            }
-
         }
+
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            axeSwing();
+        }
+
         else 
         {
 
             animator.SetBool("IsWalking?", false);
-        
+            animator.SetBool("IsSwinging?", false);
+
         }
+
     }
 
-
+  
 
 
     private void axeSwing()
     {
-       animator.SetTrigger("IsSwinging?");
+       animator.SetBool("IsSwinging?", true);
     }
 
    

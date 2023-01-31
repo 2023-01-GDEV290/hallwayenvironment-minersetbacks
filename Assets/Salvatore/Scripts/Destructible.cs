@@ -10,7 +10,7 @@ public class Destructible : MonoBehaviour
     
     void onMouseDown()
     {
-        if (Swing)
+        if (Swing == destroyedVersion)
         {
             Instantiate(destroyedVersion, transform.position, transform.rotation);
             Destroy(gameObject);

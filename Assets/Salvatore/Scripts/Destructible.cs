@@ -7,10 +7,6 @@ public class Destructible : MonoBehaviour
     public GameObject destroyedVersion;
     private Animator Swing;
 
-    void Start()
-    {
-        Swing = GetComponent<Animator>();
-    }
     
     void onMouseDown()
     {

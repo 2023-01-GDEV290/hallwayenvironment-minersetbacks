@@ -48,6 +48,11 @@ public class ThirdPersonMovement : MonoBehaviour
             animator.SetBool("IsWalking?", true);
         }
 
+        else
+        {
+            animator.SetBool("IsWalking?", false);
+        }
+
 
         if (Input.GetMouseButtonDown(0))
         {
@@ -56,11 +61,10 @@ public class ThirdPersonMovement : MonoBehaviour
 
         else 
         {
-
-            animator.SetBool("IsWalking?", false);
             animator.SetBool("IsSwinging?", false);
 
         }
+
 
     }
 

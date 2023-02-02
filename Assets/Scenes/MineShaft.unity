@@ -998,6 +998,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7523679686440992569, guid: 6943419e16287408baf10275d5850e6a, type: 3}
+      propertyPath: maxOxy
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7523679686440992571, guid: 6943419e16287408baf10275d5850e6a, type: 3}
       propertyPath: m_Name
       value: PlayerCharacter

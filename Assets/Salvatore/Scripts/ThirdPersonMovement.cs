@@ -8,7 +8,8 @@ public class ThirdPersonMovement : MonoBehaviour
     public CharacterController controller;
     public Transform cam;
     public float rotationSpeed;
-
+    public AudioClip pickAxeGrunt;
+    public bool audioPlaying = false;
     public float speed = 6f;
 
     public float turnSmoothTime = 0.1f;
@@ -75,9 +76,28 @@ public class ThirdPersonMovement : MonoBehaviour
     private void axeSwing()
     {
         animator.SetBool("IsSwinging?", true);
+        audioPlaying = true;
+        if (audioPlaying == true)
+        {
+            Invoke("gruntSound", 1.2f);
+        }
+    }
+
+    void gruntSound()
+    {
+
+        //audioPlaying = true;    
+        AudioSource swinging = GetComponent<AudioSource>();
+        swinging.PlayOneShot(pickAxeGrunt);
+        audioPlaying = false;
+        //Invoke("gruntSoundDelay", 2f);
+        //gruntSound();
+
     }
 
 
-
-
+    //void gruntSoundDelay()
+    //{
+    //audioPlaying = false;
+    //}
 }

@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class Destructible : MonoBehaviour
 {
-    public GameObject destroyedVersion;
-    private Animator Swing;
+    //public GameObject destroyedVersion;
+    public GameObject [] walls;
+    private Animator Swing_Animation;
     public bool inRange = false;
+    private int currentWall = 0;
+    public bool cooldown = false;
 
     private void OnTriggerStay(Collider other)
     {
@@ -22,12 +25,38 @@ public class Destructible : MonoBehaviour
     }
 
 
-    void onMouseDown()
+    void OnMouseDown()
     {
-        if (inRange == true)
+        Invoke("DestroyWall", 1.5f);
+        //Invoke("Cooling", 1f);
+    }
+
+    void Cooling()
+    {
+        cooldown = true;
+        Invoke("CoolOff", 1f);
+    }
+
+    void CoolOff()
+    {
+        cooldown = false;
+    }
+
+
+    public void DestroyWall()
+    {
+        Debug.Log("MouseDown");
+        if (inRange == true && cooldown == false)
         {
-            Instantiate(destroyedVersion, transform.position, transform.rotation);
-            Destroy(gameObject);
+            Destroy(walls[currentWall]);
+            currentWall++;
+            if (currentWall < 3)
+            {
+                walls[currentWall].SetActive(true);
+            }
+            Invoke("Cooling", 1f);
+
+
         }
     }
 }

@@ -22,23 +22,24 @@ public class ThirdPersonMovement : MonoBehaviour
     {
 
         animator = GetComponent<Animator>();
-        
+
     }
-    
+
     void Update()
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
 
-      
-        if (direction.magnitude >= 0.1f)
-        {
 
+        if (direction != Vector3.zero)
+        {
+            transform.forward = direction;
             Quaternion toRotation = Quaternion.LookRotation(direction, Vector3.up);
 
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime); 
-            
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+            transform.Translate(direction * speed * Time.deltaTime, Space.World);
+
             float targetAngle = Mathf.Atan2(direction.x, direction.z);
             float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
 
@@ -59,7 +60,7 @@ public class ThirdPersonMovement : MonoBehaviour
             axeSwing();
         }
 
-        else 
+        else
         {
             animator.SetBool("IsSwinging?", false);
 
@@ -68,15 +69,15 @@ public class ThirdPersonMovement : MonoBehaviour
 
     }
 
-  
+
 
 
     private void axeSwing()
     {
-       animator.SetBool("IsSwinging?", true);
+        animator.SetBool("IsSwinging?", true);
     }
 
-   
+
 
 
 }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731713, g: 0.13414738, b: 0.121078536, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1431,6 +1431,111 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7508707755252571049}
     m_Modifications:
+    - target: {fileID: 5062193678066920704, guid: 7901c31625ac0e448b9f7024e9103eed,
+        type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062193678066920704, guid: 7901c31625ac0e448b9f7024e9103eed,
+        type: 3}
+      propertyPath: RotationModule.x.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062193678066920704, guid: 7901c31625ac0e448b9f7024e9103eed,
+        type: 3}
+      propertyPath: RotationModule.y.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062193678066920704, guid: 7901c31625ac0e448b9f7024e9103eed,
+        type: 3}
+      propertyPath: RotationModule.x.minMaxState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062193678066920704, guid: 7901c31625ac0e448b9f7024e9103eed,
+        type: 3}
+      propertyPath: RotationModule.y.minMaxState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062193678066920704, guid: 7901c31625ac0e448b9f7024e9103eed,
+        type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062193678066920704, guid: 7901c31625ac0e448b9f7024e9103eed,
+        type: 3}
+      propertyPath: CollisionModule.m_Bounce.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062193678066920704, guid: 7901c31625ac0e448b9f7024e9103eed,
+        type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062193678066920704, guid: 7901c31625ac0e448b9f7024e9103eed,
+        type: 3}
+      propertyPath: RotationModule.curve.minMaxState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062193678066920704, guid: 7901c31625ac0e448b9f7024e9103eed,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062193678066920704, guid: 7901c31625ac0e448b9f7024e9103eed,
+        type: 3}
+      propertyPath: InitialModule.gravityModifier.scalar
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062193678066920704, guid: 7901c31625ac0e448b9f7024e9103eed,
+        type: 3}
+      propertyPath: RotationModule.curve.maxCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062193678066920704, guid: 7901c31625ac0e448b9f7024e9103eed,
+        type: 3}
+      propertyPath: RotationModule.curve.maxCurve.m_Curve.Array.data[1].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062193678066920704, guid: 7901c31625ac0e448b9f7024e9103eed,
+        type: 3}
+      propertyPath: RotationModule.curve.maxCurve.m_Curve.Array.data[0].inSlope
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062193678066920704, guid: 7901c31625ac0e448b9f7024e9103eed,
+        type: 3}
+      propertyPath: RotationModule.curve.maxCurve.m_Curve.Array.data[1].inSlope
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062193678066920704, guid: 7901c31625ac0e448b9f7024e9103eed,
+        type: 3}
+      propertyPath: RotationModule.curve.maxCurve.m_Curve.Array.data[0].inWeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062193678066920704, guid: 7901c31625ac0e448b9f7024e9103eed,
+        type: 3}
+      propertyPath: RotationModule.curve.maxCurve.m_Curve.Array.data[0].outSlope
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062193678066920704, guid: 7901c31625ac0e448b9f7024e9103eed,
+        type: 3}
+      propertyPath: RotationModule.curve.maxCurve.m_Curve.Array.data[1].inWeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062193678066920704, guid: 7901c31625ac0e448b9f7024e9103eed,
+        type: 3}
+      propertyPath: RotationModule.curve.maxCurve.m_Curve.Array.data[1].outSlope
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062193678066920704, guid: 7901c31625ac0e448b9f7024e9103eed,
+        type: 3}
+      propertyPath: RotationModule.curve.maxCurve.m_Curve.Array.data[0].outWeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062193678066920704, guid: 7901c31625ac0e448b9f7024e9103eed,
+        type: 3}
+      propertyPath: RotationModule.curve.maxCurve.m_Curve.Array.data[1].outWeight
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5062193678066920705, guid: 7901c31625ac0e448b9f7024e9103eed,
         type: 3}
       propertyPath: m_RootOrder
@@ -1439,12 +1544,12 @@ PrefabInstance:
     - target: {fileID: 5062193678066920705, guid: 7901c31625ac0e448b9f7024e9103eed,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.017498704
+      value: 0.0042700875
       objectReference: {fileID: 0}
     - target: {fileID: 5062193678066920705, guid: 7901c31625ac0e448b9f7024e9103eed,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.06001271
+      value: 0.012095205
       objectReference: {fileID: 0}
     - target: {fileID: 5062193678066920705, guid: 7901c31625ac0e448b9f7024e9103eed,
         type: 3}
@@ -1454,17 +1559,17 @@ PrefabInstance:
     - target: {fileID: 5062193678066920705, guid: 7901c31625ac0e448b9f7024e9103eed,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.0013237579
+      value: -0.00139
       objectReference: {fileID: 0}
     - target: {fileID: 5062193678066920705, guid: 7901c31625ac0e448b9f7024e9103eed,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0338
+      value: 0.0633
       objectReference: {fileID: 0}
     - target: {fileID: 5062193678066920705, guid: 7901c31625ac0e448b9f7024e9103eed,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0001
+      value: -0.0084
       objectReference: {fileID: 0}
     - target: {fileID: 5062193678066920705, guid: 7901c31625ac0e448b9f7024e9103eed,
         type: 3}

@@ -318,7 +318,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7143459410941273473, guid: 6943419e16287408baf10275d5850e6a, type: 3}
   m_PrefabInstance: {fileID: 1080246630}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
 --- !u!1 &235853670
 GameObject:
   m_ObjectHideFlags: 0
@@ -413,8 +412,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
-=======
->>>>>>> parent of 768ea54 (Finished mineshaft and added box coliders)
 --- !u!1001 &500594232
 PrefabInstance:
   m_ObjectHideFlags: 0

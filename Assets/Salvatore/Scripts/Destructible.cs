@@ -7,9 +7,20 @@ public class Destructible : MonoBehaviour
     //public GameObject destroyedVersion;
     public GameObject [] walls;
     private Animator Swing_Animation;
+    public bool EmitFX = false;
+    private ParticleSystem Particles;
+    public string ParticleType = "dust puff";
     public bool inRange = false;
     private int currentWall = 0;
     public bool cooldown = false;
+
+    private void Update()
+    {
+        if (inRange == true && cooldown == false && EmitFX == true)
+        {
+            Particles.Play();
+        }
+    }
 
     private void OnTriggerStay(Collider other)
     {
@@ -55,8 +66,6 @@ public class Destructible : MonoBehaviour
                 walls[currentWall].SetActive(true);
             }
             Invoke("Cooling", 1f);
-
-
         }
     }
 }

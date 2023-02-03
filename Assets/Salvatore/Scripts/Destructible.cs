@@ -7,21 +7,10 @@ public class Destructible : MonoBehaviour
     //public GameObject destroyedVersion;
     public GameObject [] walls;
     private Animator Swing_Animation;
-    public bool EmitFX = false;
-    private ParticleSystem particles;
-    public string ParticleType = "dust puff";
     public bool inRange = false;
     private int currentWall = 0;
     public bool cooldown = false;
     public AudioClip rockCrumble;
-
-    private void Update()
-    {
-        if (inRange == true && cooldown == false && EmitFX == true)
-        {
-            particles.Play();
-        }
-    }
 
     private void OnTriggerStay(Collider other)
     {

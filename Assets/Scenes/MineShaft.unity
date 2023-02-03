@@ -1767,7 +1767,7 @@ PrefabInstance:
     - target: {fileID: 5062193678066920705, guid: 7901c31625ac0e448b9f7024e9103eed,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0633
+      value: 0.043
       objectReference: {fileID: 0}
     - target: {fileID: 5062193678066920705, guid: 7901c31625ac0e448b9f7024e9103eed,
         type: 3}
@@ -3716,12 +3716,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1437151483}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &1439044352 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 5062193678066920704, guid: 7901c31625ac0e448b9f7024e9103eed,
-    type: 3}
-  m_PrefabInstance: {fileID: 812216065}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1479313127 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7274756207176412083, guid: f464b58034feb45a2a141b333b321b59,
@@ -3750,20 +3744,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 297608306}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1479313134
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1479313127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f5843e6548cbfd4cb935b2e721e6394, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collisionParticleSystem: {fileID: 1439044352}
-  once: 1
 --- !u!1001 &1490420683
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4511,20 +4491,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1916081775}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1866530362
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1866530355}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f5843e6548cbfd4cb935b2e721e6394, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collisionParticleSystem: {fileID: 1439044352}
-  once: 1
 --- !u!1001 &1885343317
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5050,6 +5016,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWallParent
       objectReference: {fileID: 0}
+    - target: {fileID: 647264424849885190, guid: 206327752e5194c198a2aa711c8ced24,
+        type: 3}
+      propertyPath: m_TagString
+      value: Breakable
+      objectReference: {fileID: 0}
     - target: {fileID: 647264424955985089, guid: 206327752e5194c198a2aa711c8ced24,
         type: 3}
       propertyPath: m_IsTrigger
@@ -5234,17 +5205,3 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 647264426245649103}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7508707755252571054
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7508707755252571048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f5843e6548cbfd4cb935b2e721e6394, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collisionParticleSystem: {fileID: 1439044352}
-  once: 1

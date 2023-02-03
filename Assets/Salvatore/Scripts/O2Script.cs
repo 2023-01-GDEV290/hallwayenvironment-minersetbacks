@@ -8,6 +8,7 @@ public class O2Script : MonoBehaviour
 
     public float maxOxy = 180.0f;
     private float CurrentOxy;
+    public Slider o2Bar;
 
 
     // Start is called before the first frame update
@@ -20,6 +21,7 @@ public class O2Script : MonoBehaviour
     void Update()
     {
         CurrentOxy -= Time.deltaTime;
+        o2Bar.value = CurrentOxy / maxOxy;
 
         if (CurrentOxy <= 0.0f)
         {

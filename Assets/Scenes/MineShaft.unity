@@ -3716,6 +3716,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1437151483}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &1439044352 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5062193678066920704, guid: 7901c31625ac0e448b9f7024e9103eed,
+    type: 3}
+  m_PrefabInstance: {fileID: 812216065}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1479313127 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7274756207176412083, guid: f464b58034feb45a2a141b333b321b59,
@@ -3945,6 +3951,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1559411408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773595403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f5843e6548cbfd4cb935b2e721e6394, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionParticleSystem: {fileID: 1439044352}
+  once: 1
 --- !u!1 &1592403254
 GameObject:
   m_ObjectHideFlags: 0

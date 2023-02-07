@@ -1,36 +1,32 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class FlickeringLight : MonoBehaviour
 {
-    public light;
-    public float MinTime;
-    public float MaxTime;
-    public float Timer;
+      public bool isFLickering = false;
+    public float timeDelay;
 
-    void Start()
-    {
-        Timer = Random.Range(MinTime, MaxTime);
-    }
-
-
+    
     void Update()
     {
-        FlickerLight();
-
+        if (isFLickering == false)
+        {
+            StartCoroutine(FlickeringLightDelay());
+        }
+           
     }
 
-    void FlickerLight()
+    IEnumerator FlickeringLightDelay()
     {
-        if (Timer > 0)
-            Timer -= Time.deltaTime;
+        isFLickering = true;
 
-        if (Timer < 0)
-        {
-            light.enabled = !light.enabled;
-            Timer = Random.Range(MinTime, MaxTime);
-        }
+        this.gameObject.GetComponent<Light>().enabled = false;
+        timeDelay = UnityEngine.Random.Range(0.5f, 1.0f);
+        yield return new WaitForSeconds(timeDelay);
+        this.gameObject.GetComponent<Light>().enabled = true;
+        timeDelay = UnityEngine.Random.Range(0.1f, 0.5f);
+        yield return new WaitForSeconds(timeDelay);
+        isFLickering = false;
     }
 }

@@ -4882,8 +4882,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6270310073774325511, guid: c052ebfa4353b9644932aacccf7da402,
         type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6270310073774325511, guid: c052ebfa4353b9644932aacccf7da402,
+        type: 3}
       propertyPath: CollisionModule.m_Bounce.scalar
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6270310073774325511, guid: c052ebfa4353b9644932aacccf7da402,
+        type: 3}
+      propertyPath: InitialModule.startSizeY.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6270310073774325511, guid: c052ebfa4353b9644932aacccf7da402,
+        type: 3}
+      propertyPath: InitialModule.startSizeZ.scalar
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6270310073774325511, guid: c052ebfa4353b9644932aacccf7da402,
         type: 3}

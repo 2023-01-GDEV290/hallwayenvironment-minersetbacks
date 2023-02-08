@@ -11,6 +11,8 @@ public class Destructible : MonoBehaviour
     private int currentWall = 0;
     public bool cooldown = false;
     public AudioClip rockCrumble;
+    public ParticleSystem particle;
+    public bool hasTriggered = false;
 
     private void OnTriggerStay(Collider other)
     {
@@ -58,6 +60,14 @@ public class Destructible : MonoBehaviour
                 walls[currentWall].SetActive(true);
             }
             Invoke("Cooling", 1f);
+
+            if (hasTriggered == false)
+            {
+                hasTriggered = true;
+                Instantiate(particle, transform.position * 0.5f, Quaternion.identity);
+                hasTriggered = false;
+               
+            }
         }
     }
 }

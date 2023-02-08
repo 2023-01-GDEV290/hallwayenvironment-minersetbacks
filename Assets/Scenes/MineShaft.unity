@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.000018824048, g: 0.00000003570821, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.000018824003, g: 0.00000003570821, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4984,6 +4984,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4970765317010281468, guid: aee345cfcae893949883db4fda5181bb,
         type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4970765317010281468, guid: aee345cfcae893949883db4fda5181bb,
+        type: 3}
       propertyPath: InitialModule.rotation3D
       value: 1
       objectReference: {fileID: 0}
@@ -7367,13 +7372,19 @@ PrefabInstance:
     - target: {fileID: 647264424849885187, guid: 206327752e5194c198a2aa711c8ced24,
         type: 3}
       propertyPath: inRange
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 647264424849885187, guid: 206327752e5194c198a2aa711c8ced24,
         type: 3}
       propertyPath: cooldown
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 647264424849885187, guid: 206327752e5194c198a2aa711c8ced24,
+        type: 3}
+      propertyPath: particle
+      value: 
+      objectReference: {fileID: 198656289721292014, guid: 64891a0eb28db934898420d80ca07cb3,
+        type: 3}
     - target: {fileID: 647264424849885187, guid: 206327752e5194c198a2aa711c8ced24,
         type: 3}
       propertyPath: rockCrumble

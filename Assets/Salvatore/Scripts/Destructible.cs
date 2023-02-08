@@ -13,6 +13,7 @@ public class Destructible : MonoBehaviour
     public AudioClip rockCrumble;
     public ParticleSystem particle;
     public bool hasTriggered = false;
+    
 
     private void OnTriggerStay(Collider other)
     {
@@ -52,8 +53,8 @@ public class Destructible : MonoBehaviour
         if (inRange == true && cooldown == false)
         {
             Destroy(walls[currentWall]);
-            AudioSource rock = GetComponent<AudioSource>();
-            rock.PlayOneShot(rockCrumble);
+            //AudioSource rock = GetComponent<AudioSource>();
+            //rock.PlayOneShot(rockCrumble);
             currentWall++;
             if (currentWall < 3)
             {
@@ -65,6 +66,8 @@ public class Destructible : MonoBehaviour
             {
                 hasTriggered = true;
                 Instantiate(particle, transform.position * 0.5f, Quaternion.identity);
+                AudioSource rock = GetComponent<AudioSource>();
+                rock.PlayOneShot(rockCrumble);
                 hasTriggered = false;
                
             }

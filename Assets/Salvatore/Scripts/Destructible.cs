@@ -65,7 +65,7 @@ public class Destructible : MonoBehaviour
             if (hasTriggered == false)
             {
                 hasTriggered = true;
-                Instantiate(particle, transform.position * 0.5f, Quaternion.identity);
+                Instantiate(particle, transform.position * 0.6f, Quaternion.identity);
                 AudioSource rock = GetComponent<AudioSource>();
                 rock.PlayOneShot(rockCrumble);
                 hasTriggered = false;

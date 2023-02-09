@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.000018824048, g: 0.00000003570821, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.000018824003, g: 0.00000003570821, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5879,7 +5879,6 @@ GameObject:
   m_Component:
   - component: {fileID: 230413599}
   - component: {fileID: 230413600}
-  - component: {fileID: 230413601}
   m_Layer: 0
   m_Name: MineShaftEnding
   m_TagString: Untagged
@@ -5914,24 +5913,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 230413598}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 3.3047268, y: 0.29361856, z: 3.332428}
   m_Center: {x: -0.74207103, y: -0.8864966, z: 0.29614067}
---- !u!114 &230413601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 230413598}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97c2f05745d277e4cbf9bcd7de2740a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  winDieScript: {fileID: 376551367}
 --- !u!1001 &239056545
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6343,18 +6329,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &257874655
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 257874638}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47620f3eaa04eb84d8ffd77b68d7f545, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &375810901
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6460,51 +6434,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 375810901}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &376551366
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 376551368}
-  - component: {fileID: 376551367}
-  m_Layer: 0
-  m_Name: GameController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &376551367
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 376551366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b94c21947a8ebcb46878d46db0fc2944, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  O2BarValue: 0
---- !u!4 &376551368
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 376551366}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 19
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &391082495
 PrefabInstance:
   m_ObjectHideFlags: 0
